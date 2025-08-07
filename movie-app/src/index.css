@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 40px;
+  background-color: #151515;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h2 {
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 48px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 1024px;
+  margin: 0 auto;
+}
