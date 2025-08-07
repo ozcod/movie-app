@@ -1,26 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-
-const Card = ({ title }) => {
-  return (
-    <div>
-      <h2>{title}</h2>
-    </div>
-  );
-};
-
+import React from "react";
 const App = () => {
   return (
-    <div className="card-conatiner">
-      <h2> Hello </h2>
+    <main>
+      <div className="pattern"></div>
+      <div className="wrapper"></div>
 
-      <Card title="Meow" />
-      <Card title="woof" />
-      <Card title="Crrack" />
-    </div>
+      <header>
+        <h1>
+          Find <span className="text-gradient">Movies</span> You'll Enjoy
+          Without the Hassle
+        </h1>
+      </header>
+      <p>Search<p/>
+    </main>
   );
 };
-
 export default App;
