@@ -1,12 +1,88 @@
-# React + Vite
+# Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application to browse and search movies, built with [React](https://react.dev/) and [Vite](https://vitejs.dev/). This project provides a fast development experience and leverages modern JavaScript tooling.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 Search for movies
+- 📃 View detailed information about each movie
+- 💡 Responsive and user-friendly interface
+- ⚡ Powered by React and Vite for instant reloads and fast builds
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ozcod/movie-app.git
+cd movie-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn
+```
+
+### Running the App
+
+Start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open your browser and visit [http://localhost:5173](http://localhost:5173) to view the app.
+
+### Build for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+The production-ready files will be in the `dist/` directory.
+
+## Project Structure
+
+```
+movie-app/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Customization
+
+- Update movie APIs or endpoints in the source code as needed.
+- Add your own components, styles, or additional features.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ using React and Vite.
