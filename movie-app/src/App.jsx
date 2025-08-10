@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Search from "./component/search";
 import Spinner from "./component/Spinner";
+import MovieCard from "./component/MovieCard"
 
-const API_URL = import.meta.env.API_BASE_URL;
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+
 
 const API_OPTIONS = {
   method: "GET",
-  header: {
+  headers: {
     accept: "application/json",
     Authorization: `Bearer ${API_KEY}`,
   },
@@ -22,12 +24,13 @@ const App = () => {
     try {
       setIsLoading(true);
       setErrorMessage("");
-      const endpoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
+      const endpoint = `${BASE_URL}/discover/movie?sort_by=popularity.desc`;
       const response = await fetch(endpoint, API_OPTIONS);
       if (!response.ok) {
         throw new Error("Failed to fetch movies");
       }
       const data = await response.json();
+      console.log(data);
       if (data.response === "False") {
         setErrorMessage(data.Error || "Failed to fetch movies");
       }
@@ -66,9 +69,7 @@ const App = () => {
           ) : (
             <ul>
               {movieList.map((movie) => (
-                <p key={movie.id} className="text-white">
-                  {movie.title}
-                </p>
+                <MovieCard  key={movie.id} movie={movie}/>
               ))}
             </ul>
           )}
