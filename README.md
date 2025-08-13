@@ -1,6 +1,6 @@
-# Movie App
+# Popcorn Times
 
-A modern web application to browse and search movies, built with [React](https://react.dev/) and [Vite](https://vitejs.dev/). This project provides a fast development experience and leverages modern JavaScript tooling.
+A modern web application to browse and search movies database, built with [React](https://react.dev/) and [Vite](https://vitejs.dev/). This project provides a fast development experience and leverages modern JavaScript tooling.
 
 ## Features
 
